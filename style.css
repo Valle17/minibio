@@ -1,0 +1,121 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Satisfy&display=swap');
+
+* {
+    font-family: 'Poppins', sans-serif;
+}
+
+body {
+    background-image: linear-gradient(to right,
+            rgb(236, 72, 153),
+            rgb(239, 68, 68),
+            rgb(234, 179, 8));
+}
+
+.box {
+    width: 100%;
+    max-width: 400px;
+    text-align: center;
+    margin: 20px auto;
+}
+
+.name {
+    font-family: 'Satisfy', cursive;
+    font-size: 300%;
+}
+
+.profile {
+    width: 200px;
+    height: 200px;
+    object-fit: cover;
+    border-radius: 50%;
+    border: 5px solid black;
+}
+
+.job {
+    margin-bottom: -10px;
+}
+
+.description {
+    margin: 0px;
+    color: white;
+}
+
+.cubo {
+    color: black;
+    background-color: white;
+    display: block;
+    width: 400px;
+    clear: both;
+    overflow: auto;
+    margin: 50px auto;
+    margin-top: 20px;
+    box-shadow: -3px 6px 18px 0px rgb(145, 146, 153);
+    border-radius: 15px;
+}
+
+.cubo:hover {
+    opacity: 0.5;
+}
+
+.boximg img {
+    width: 100px;
+    height: 60px;
+    object-fit: contain;
+}
+
+.boximg {
+    float: left;
+    width: 30%;
+    padding: 10px 0;
+}
+
+.cubo p {
+    float: right;
+    width: 70%;
+    padding-top: 15px;
+    text-align: left;
+}
+
+
+.button {
+    display: block;
+    margin: 50px auto;
+    border-radius: 4px;
+    background-color: #c61ef4;
+    border: none;
+    color: #FFFFFF;
+    text-align: center;
+    font-size: 14px;
+    padding: 20px;
+    width: 200px;
+    transition: all 0.5s;
+    cursor: pointer;
+
+}
+
+.button span {
+    cursor: pointer;
+    display: block;
+    position: relative;
+    transition: 0.5s;
+}
+
+.button span:after {
+    content: '\00bb';
+    /* Entidades CSS. Para usar entidades HTML, use &#8594;*/
+    position: absolute;
+    opacity: 0;
+    top: 0;
+    right: -20px;
+    transition: 0.5s;
+}
+
+.button:hover span {
+    padding-right: 25px;
+}
+
+.button:hover span:after {
+    opacity: 1;
+    right: 0;
+}
